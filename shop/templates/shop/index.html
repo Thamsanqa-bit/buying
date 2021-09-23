@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Great Awl | Welcome to my home page{% endblock%}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+          integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+
+<style>
+.card-text{
+    color: green;
+    font-weight: 800;
+}
+</style>"
+</head>
+<body>
+
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+        <div class="logo">
+            <img src="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="{% url 'product' %}">Products</a></li>
+                <li><a href="{% url 'weather' %}" >Weather</a></li>
+                <li><a href="{% url 'home' %}">RealChat</a></li>
+                <li><a href="" >Account</a></li>
+            </ul>
+        </nav>
+    </div>
+        <div class="row">
+            <div class="col-2">
+               <h1>Thamsanqa Mbodla</h1>
+                <p>Hey my name is Thamsanqa Mbodla I am a software developer<br>
+                    take a tour on my portfolio website and,<br>I'll be thrived to have a feedback from you
+                </p>
+            </div>
+            <div class="col-2">
+                <img src="{% static 'images/home-img.png' %}">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----featured categories----->
+
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="{% static 'images/g-1.jpg' %}">
+                </div>
+                <div class="col-3">
+                    <img src="{% static 'images/g-2.jpg' %}">
+                 </div>
+                <div class="col-3">
+                <img src="{% static 'images/g-3.jpg' %}">
+             </div>
+        </div>
+        </div>
+    </div>
+
+<!-----muffins----->
+
+     <div class="small-container">
+         <h2 class="title">Extra Good</h2>
+         <div class="row">
+             <div class="col-4">
+                 <img src="{% static 'images/g-4.jpg' %}">
+                 <h4>Muffins</h4>
+                 <div class="rating">
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star-o"></i>
+                 </div>
+                 <p>R50.00</p>
+              </div>
+              <div class="col-4">
+                 <img src="{% static 'images/g-5.jpg' %}">
+                 <h4>Cheddar</h4>
+                 <div class="rating">
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star-o"></i>
+                 </div>
+                 <p>35.00</p>
+              </div>
+              <div class="col-4">
+                 <img src="{% static 'images/g-6.jpg' %}">
+                 <h4>Fried wings</h4>
+                 <div class="rating">
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star-o"></i>
+                 </div>
+                 <p>R80.00</p>
+              </div>
+         </div>
+      </div>
+                    
+</body>
+</html>
